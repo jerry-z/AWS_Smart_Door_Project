@@ -1,0 +1,20 @@
+{
+   "Input": { 
+      "KinesisVideoStream": { 
+         "Arn": "arn:aws:kinesisvideo:us-east-1:899580659559:stream/gate-RecognizeVisitor/1571965987636"
+      }
+   },
+   "Name": "gate-StreamProcessor",
+   "Output": { 
+      "KinesisDataStream": { 
+         "Arn": "arn:aws:kinesis:us-east-1:899580659559:stream/gate-DataStream"
+      }
+   },
+   "RoleArn": "arn:aws:iam::899580659559:role/gate-rekognition",
+   "Settings": { 
+      "FaceSearch": { 
+         "CollectionId": "gate-Collection",
+         "FaceMatchThreshold": 85.5
+      }
+   }
+}
